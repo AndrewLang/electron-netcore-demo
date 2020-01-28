@@ -25,7 +25,11 @@ function initialize() {
 
     app.on('ready', createWindow);
 
-    app.on('window-all-closed', function () { });
+    app.on('window-all-closed', function () {
+        if (process.platform !== 'darwin') {
+            app.quit();
+        }
+     });
 }
 
 function loadModules() {
