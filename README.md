@@ -1,6 +1,7 @@
 # electron-netcore-demo
 
-> None production code, just prove the ideas behind it. Only tested on Windows 10. 
+> None production code, just prove the ideas behind it.
+> Only tested on Windows 10.
 
 This is a demo of combine .Net Core and Electron for a desktop application. .Net core app is an ASP.Net core application which works as a web server, Electron app plays as a GUI of the application, GUI talk to the server through WebSocket. I am pretty this way will work, just want to see how difficult to create a prototype.
 
