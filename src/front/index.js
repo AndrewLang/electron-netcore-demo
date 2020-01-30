@@ -17,6 +17,9 @@ function createWindow() {
     mainWindow.loadURL(`file://${basePath}/index.html`);
     
     mainWindow.show();
+
+    /** start back-end server */
+    
 }
 
 function initialize() {
