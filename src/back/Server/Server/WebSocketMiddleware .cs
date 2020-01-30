@@ -182,7 +182,17 @@ namespace Server
                             Console.WriteLine($"Socket {client.SocketId}: Received {receiveResult.MessageType} frame ({receiveResult.Count} bytes).");
                             Console.WriteLine($"Socket {client.SocketId}: Echoing data to queue.");
                             string message = Encoding.UTF8.GetString(buffer.Array, 0, receiveResult.Count);
-                            client.BroadcastQueue.Add(message);
+                            Console.WriteLine($"Socket {client.SocketId}: {message}");
+
+                            var response = message;
+                            var invokeMessage = message.ToMessage();
+                            if( invokeMessage != null )
+                            {
+                                invokeMessage.Type = "Completion";
+                                response = invokeMessage.ToJson();
+                            }
+
+                            client.BroadcastQueue.Add(response);
                         }
                     }
                 }

@@ -20,7 +20,7 @@ namespace Server
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseUrls(new string[] { @"http://localhost:98964" });
+                    webBuilder.UseUrls(new string[] { @"http://localhost:8964" });
                     webBuilder.UseStartup<Startup>();
                 });
     }
