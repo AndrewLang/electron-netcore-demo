@@ -38,7 +38,7 @@
     "ts-node": "7.0.0",
     "ts-loader": "5.3.3",
     "typescript": "3.2.1",
-    "electron": "7.1.11",
+    "electron": "9.4.0",
     "electron-prebuilt": "^1.4.13",
     "electron-packager": "^12.0.0",
     "run-sequence": "^2.2.1",
