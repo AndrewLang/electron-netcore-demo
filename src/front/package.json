@@ -33,7 +33,7 @@
     "rimraf": "^2.6.2",
     "shelljs": "0.8.2",
     "chalk": "2.4.1",
-    "gulp": "3.9.1",
+    "gulp": "4.0.2",
     "gulp-typescript": "^3.2.3",
     "ts-node": "7.0.0",
     "ts-loader": "5.3.3",
